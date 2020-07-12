@@ -99,7 +99,8 @@ app.route("/articles/:articleTitle")
     }
   );  
 })
-.app.delete(function (req, res) {
+
+.delete(function (req, res) {
   Article.deleteOne(
     {title: req.body.articleTitle, },
     function (err) {
